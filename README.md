@@ -22,7 +22,9 @@ I'm a data analyst with a background in Business Analytics, Entrepreneurship, an
 | Project | Description | Key Concepts |
 |---|---|---|
 | [Operation: Shadow Files](./spy-detective-game/) | A text-based spy adventure game with branching storylines | If/Else logic, user input handling, nested conditionals |
-| *(More coming soon)* | | |
+| [Escaping the Maze](./Escaping%20the%20Maze/) | A Python solution that guides a robot named Reeborg through any randomly generated maze using the Right-Hand Wall Following Rule. | Loops, algorithmic thinking, maze navigation |
+| [Password Generator](./Password%20Generator/) | A beginner-friendly Python program that generates a secure, randomized password based on user-specified quantities of letters, symbols, and numbers. | Random module, loops, string concatenation, user input |
+| [rock-paper-scissors](./rock-paper-scissors/) | A terminal-based Rock Paper Scissors game built in Python with ASCII Art. | Conditionals, random selection, user input, string formatting |
 
 ---
 
