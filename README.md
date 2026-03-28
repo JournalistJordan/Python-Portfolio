@@ -9,7 +9,7 @@ Each project lives in its own folder with its own README explaining what it does
 
 ## 👤 About Me
 
-I'm a data analyst with a background in Business Analytics, Entrepreneurship, and Cybersecurity. I've worked with tools like Power BI, Tableau, SQL, and Excel in professional settings — and I use Python projects like these to sharpen my programming fundamentals and problem-solving skills.
+I'm a data analyst with a background in Business Analytics, Entrepreneurship, and Cybersecurity. I've worked with tools like Power BI, Tableau, SQL, Power Apps, Power Automate, and Excel in professional settings — and I use Python projects like these to sharpen my programming fundamentals and problem-solving skills.
 
 - 📧 Jordy3338@gmail.com
 - 🔗 [LinkedIn](http://www.linkedin.com/in/jordan-foltz)
