@@ -63,6 +63,14 @@ All projects in this repository are written in **Python 3**. To run any script:
 
 ## 📌 Note
 
-These projects are intentionally kept beginner-to-intermediate in scope. The goal is to demonstrate clean logic, clear structure, and a progression of skills over time — not just the end result.
+These projects are intentionally beginner-to-intermediate in scope. The goal is to demonstrate clean logic, clear structure, and a progression of skills over time — not just the end result.
 
 More projects will be added regularly as I continue building.
+
+---
+
+## 🙏 Thank You
+
+A big thank you to everyone who has supported, encouraged, and collaborated with me on my coding journey. Your feedback and mentorship mean the world!
+
+
