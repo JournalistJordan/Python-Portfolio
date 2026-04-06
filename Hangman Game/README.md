@@ -38,13 +38,13 @@ This is a terminal-based Hangman game written in Python. A word is randomly sele
 ```
 Word to guess: _ _ _ _ _
 
-🔥 6/6 lives remaining | Wrong guesses: []
+ 6/6 lives remaining | Wrong guesses: []
 Pick a letter, any letter: a
 
 Nice! 'a' is in there.
 Word to guess: _ a _ _ _
 
-🔥 6/6 lives remaining | Wrong guesses: []
+ 6/6 lives remaining | Wrong guesses: []
 Pick a letter, any letter: z
 
 Nope! 'z' isn't in the word. That's gonna cost you.
@@ -97,7 +97,7 @@ game_over = False
 
 while not game_over:
 
-    print(f"\n🔥 {lives}/6 lives remaining | Wrong guesses: {wrong_letters}")
+    print(f"\n {lives}/6 lives remaining | Wrong guesses: {wrong_letters}")
     guess = input("Pick a letter, any letter: ").lower()
 
     # Validate input — only single letters allowed
@@ -128,12 +128,12 @@ while not game_over:
     # Win condition
     if "_" not in display:
         game_over = True
-        print("\n🎉 YOU CRACKED IT! Not bad at all.")
+        print("\n YOU CRACKED IT! Not bad at all.")
 
     # Lose condition
     if lives == 0:
         game_over = True
-        print(f"\n💀 Game over. It was '{chosen_word}'. Better luck next time.")
+        print(f"\n Game over. It was '{chosen_word}'. Better luck next time.")
 ```
 
 ---
