@@ -1,0 +1,59 @@
+# Hangman Game Project by Jordan Foltz
+import random
+from hangman_words import word_list
+from hangman_art import stages, logo
+
+lives = 6
+
+print(logo)
+
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
+
+# Build the initial blanks
+display = ["_"] * word_length
+print("Word to guess: " + " ".join(display))
+
+correct_letters = []
+wrong_letters = []
+game_over = False
+
+while not game_over:
+
+    print(f"\n {lives}/6 lives remaining | Wrong guesses: {wrong_letters}")
+    guess = input("Pick a letter, any letter: ").lower()
+
+    # Validate input — only single letters allowed
+    if len(guess) != 1 or not guess.isalpha():
+        print("One letter at a time! Try again.")
+        continue
+
+    # Already guessed check
+    if guess in correct_letters or guess in wrong_letters:
+        print(f"You already threw out '{guess}'. Pick something new!")
+        continue
+
+    # Check the guess
+    if guess in chosen_word:
+        print(f"Nice! '{guess}' is in there.")
+        for position, letter in enumerate(chosen_word):
+            if letter == guess:
+                display[position] = letter
+                correct_letters.append(guess)
+    else:
+        lives -= 1
+        wrong_letters.append(guess)
+        print(f"Nope! '{guess}' isn't in the word. That's gonna cost you.")
+
+    print("Word to guess: " + " ".join(display))
+    print(stages[lives])
+
+    # Win condition
+    if "_" not in display:
+        game_over = True
+        print("\n YOU CRACKED IT! Not bad at all.")
+
+    # Lose condition
+    if lives == 0:
+        game_over = True
+        print(f"\n Game over. It was '{chosen_word}'. Better luck next time.")
