@@ -31,13 +31,13 @@ This project was built to practice **dictionaries**, **functions**, and **while 
 | f-strings | Formatted winner announcement output |
 | Input handling | `.lower()` normalizes yes/no responses |
 | Screen clearing | `print("\n" * 50)` simulates a cleared screen between bidders |
-| External modules | `import art` used to display a logo at program start |
+| ASCII art | Custom gavel logo rendered with a raw string literal (`r'''...'''`) |
 
 ---
 
 ## 🗂️ How It Works
 
-1. The program displays a logo and prompts the first bidder to enter their name and bid
+1. The program displays a gavel logo and prompts the first bidder to enter their name and bid
 2. Each bid is stored in a dictionary as `{"Name": amount}`
 3. After each bid, the program asks if there are more bidders
    - If **yes**, the screen is cleared so the next bidder cannot see previous entries
@@ -48,14 +48,8 @@ This project was built to practice **dictionaries**, **functions**, and **while 
 
 ## ▶️ How to Run
 
-**Requirements:** Python 3 and the `art` library
+**Requirements:** Python 3 (no external libraries needed)
 
-Install the required library first:
-```bash
-pip install art
-```
-
-Then run the program:
 ```bash
 python silent_auction.py
 ```
@@ -82,5 +76,4 @@ The winner is Alex with a bid of $310.
 - **Author:** Jordan Foltz
 - **Date:** 2026
 - **Language:** Python 3
-- **External Library:** `art`
 - **Status:** Complete
