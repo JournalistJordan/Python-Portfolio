@@ -1,6 +1,18 @@
 # Blind Auction Project by Jordan Foltz
-import art
-print(art.logo)
+logo = r'''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+print(logo)
 
 # Defining a function to compare the bids
 def find_highest_bidder(bidding_dictionary):
